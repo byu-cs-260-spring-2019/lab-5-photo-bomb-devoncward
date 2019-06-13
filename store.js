@@ -26,7 +26,7 @@ export default new Vuex.Store({
     async login(context, data) {
       try {
         let response = await firebase.auth().signInWithEmailAndPassword(data.email, data.password);
-        context.commit('setUser', response.user);
+        context.commit('setUser', response.data);
         return "";
       } catch (error) {
         return error.message;
