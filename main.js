@@ -18,6 +18,8 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+export const db = firebase.firestore();
+
 firebase.auth().onAuthStateChanged(user => {
   if(user){
     store.commit('setUser',user);

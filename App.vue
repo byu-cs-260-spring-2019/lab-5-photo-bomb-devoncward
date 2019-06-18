@@ -9,6 +9,12 @@
       <li class="pure-menu-item">
         <router-link to="/mypage" class="pure-menu-link">My Page</router-link>
       </li>
+      <li class="pure-menu-item">
+        <router-link to="/about" class="pure-menu-link">Get Free Bitcoin</router-link>
+      </li>
+      <li class="pure-menu-item">
+        <router-link to="/bonus" class="pure-menu-link">See Other's Private Info. </router-link>
+      </li>
     </ul>
   </div>
   <div class="content">
@@ -41,7 +47,7 @@
   color: #fff;
   font-size: 1.2em;
   padding: 20px 20px;
-  background-color: #F2385A;
+  background-color: green;
   margin-bottom: 10px;
 }
 
@@ -57,7 +63,7 @@
 
 .pure-menu-link.router-link-exact-active {
   background: #fff;
-  color: #F2385A;
+  color: green;
 }
 
 .content {
